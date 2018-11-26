@@ -3,6 +3,7 @@ package com.fusemachines.contact.main.contact_List.model
 import android.os.Parcel
 import android.os.Parcelable
 
+// Model Class
 data class AddContactDetails (val fname: String, val lname : String, var mNum : String, var hmNum : String, var offNum : String) : Parcelable {
     constructor(parcel: Parcel) : this(
             parcel.readString(),
