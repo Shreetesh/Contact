@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+    <ImageView
+            android:id="@+id/img_contactdetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="16dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+    <TextView
+            android:id="@+id/tv_contactdetail_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img_contactdetail"
+            android:layout_toRightOf="@+id/img_contactdetail"
+            android:text="MOBILE"
+            android:textColor="@color/colorAccent" />
+
+    <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tv_contactdetail_title"
+            android:layout_margin="2dp"
+            android:layout_toRightOf="@id/img_contactdetail"
+            android:background="@color/colorAccent" />
+
+    <TextView
+            android:id="@+id/tv_contactdetail_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_alignLeft="@+id/view"
+            android:text="9849961353" />
+</RelativeLayout>
